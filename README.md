@@ -14,7 +14,9 @@ A responsive, static multilingual company website for IVI GROUP OU.
 - Russian (Русский)
 
 ## Deploy
-This is a static website. The entry page is `index.html`; no framework or build command is required. The GitHub repository is connected to Vercel for deployments.
+This is a static website. The entry page is `index.html` at the repository root; no framework or build command is required. The GitHub repository is connected to Vercel for deployments.
+
+**Vercel configuration:** keep the Root Directory at the repository root and leave Output Directory unset. The `public/` folder contains static assets and must not be configured as the entire deployment output directory, because that would omit the root `index.html` page.
 
 ## Before the public company launch
 Confirm and add the company's official contact details, legal company profile, product range, operating geography, and any certifications or quality statements that the company is entitled to publish.
