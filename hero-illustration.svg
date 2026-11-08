@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+<defs>
+ <linearGradient id="sea" x1="90" y1="470" x2="1120" y2="700" gradientUnits="userSpaceOnUse"><stop stop-color="#062b4a"/><stop offset=".55" stop-color="#087eaa"/><stop offset="1" stop-color="#12b9d4"/></linearGradient>
+ <linearGradient id="hull" x1="340" y1="360" x2="730" y2="510" gradientUnits="userSpaceOnUse"><stop stop-color="#f6fbff"/><stop offset="1" stop-color="#6ab8d4"/></linearGradient>
+ <linearGradient id="salmon" x1="650" y1="555" x2="1030" y2="675" gradientUnits="userSpaceOnUse"><stop stop-color="#ffb07b"/><stop offset=".5" stop-color="#f36d45"/><stop offset="1" stop-color="#b83b36"/></linearGradient>
+ <linearGradient id="glass" x1="640" y1="260" x2="960" y2="480" gradientUnits="userSpaceOnUse"><stop stop-color="#b9eaff" stop-opacity=".65"/><stop offset="1" stop-color="#1c77a5" stop-opacity=".35"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<!-- luminous trade map -->
+<g opacity=".85" stroke="#37caff" stroke-width="2">
+ <path d="M565 108C720 5 936 40 1090 150M530 165C720 60 930 110 1080 210M670 65C760 165 890 190 1040 125" opacity=".55"/>
+ <path d="M600 150Q780 5 935 112T1110 170" stroke-dasharray="5 10"/>
+</g>
+<g fill="#26c9ff" filter="url(#glow)"><circle cx="600" cy="150" r="5"/><circle cx="780" cy="82" r="5"/><circle cx="930" cy="112" r="5"/><circle cx="1080" cy="170" r="5"/></g>
+<g fill="#1b91c8" opacity=".22"><path d="m650 95 45-30 43 13 30-22 40 12 15 34-25 24-48-4-20 25-47-10-33 15-28-24z"/><path d="m810 175 35-24 37 10 22 38-18 27-44-4-22-21z"/><path d="m1000 110 40-20 46 18 18 32-28 24-48-7-29-20z"/></g>
+<!-- distant ocean / wake -->
+<path d="M80 560Q250 500 410 560T760 560T1180 540V760H80Z" fill="url(#sea)" opacity=".75"/>
+<g stroke="#66d9f4" stroke-width="4" opacity=".65"><path d="M80 610q120-36 240 0t240 0 240 0 240 0 160 0"/><path d="M130 655q120-30 240 0t240 0 240 0 240 0" opacity=".55"/></g>
+<!-- fishing vessel -->
+<g transform="translate(145 270)">
+ <path d="M20 205h400l-54 88H100z" fill="#0a3d5c" stroke="#9deaff" stroke-width="4"/>
+ <path d="M55 203h332l-35 35H88z" fill="url(#hull)"/>
+ <path d="M170 202V95h115v107" fill="#eaf7fc" stroke="#9deaff" stroke-width="4"/>
+ <path d="M195 95V48h60v47M225 48V10M225 10l75 45" stroke="#bcecff" stroke-width="5"/>
+ <path d="M185 130h85M185 160h85" stroke="#4b8eaa" stroke-width="5"/>
+ <g fill="#07324d"><rect x="190" y="111" width="25" height="22" rx="3"/><rect x="230" y="111" width="25" height="22" rx="3"/><rect x="190" y="145" width="25" height="18" rx="3"/><rect x="230" y="145" width="25" height="18" rx="3"/></g>
+ <path d="M65 248q110 30 225 0" stroke="#fff" stroke-width="5" opacity=".6"/>
+ <path d="M15 310q85-25 165 0t170 0" stroke="#68d9fa" stroke-width="5" opacity=".7"/>
+</g>
+<!-- processing facility -->
+<g transform="translate(600 275)">
+ <path d="M0 105 75 55h290v225H0z" fill="url(#glass)" stroke="#bdeeff" stroke-width="4"/>
+ <path d="M75 55V5h290v50" fill="#d9f4ff" fill-opacity=".22" stroke="#bdeeff" stroke-width="4"/>
+ <path d="M30 110v165M105 110v165M180 110v165M255 110v165M330 110v165" stroke="#b9eaff" stroke-width="4" opacity=".7"/>
+ <path d="M0 175h365M0 225h365" stroke="#b9eaff" stroke-width="3" opacity=".5"/>
+ <g fill="#e9faff"><rect x="125" y="120" width="26" height="62" rx="7"/><circle cx="138" cy="112" r="13"/><rect x="205" y="120" width="26" height="62" rx="7"/><circle cx="218" cy="112" r="13"/></g>
+ <g fill="#1e789e"><rect x="132" y="125" width="12" height="16"/><rect x="212" y="125" width="12" height="16"/></g>
+</g>
+<!-- reefer truck and containers -->
+<g transform="translate(940 380)">
+ <rect x="0" y="0" width="170" height="100" rx="5" fill="#e7f5fa" stroke="#9deaff" stroke-width="4"/>
+ <path d="M170 35h65l42 45v20H170z" fill="#f5fbff" stroke="#9deaff" stroke-width="4"/>
+ <path d="M190 48h37l25 28h-62z" fill="#4a9ac0"/>
+ <circle cx="55" cy="105" r="20" fill="#082d47" stroke="#b9eaff" stroke-width="6"/><circle cx="220" cy="105" r="20" fill="#082d47" stroke="#b9eaff" stroke-width="6"/>
+ <g stroke="#7cbad2" stroke-width="3"><path d="M20 15v70M50 15v70M80 15v70M110 15v70M140 15v70"/></g>
+ <rect x="20" y="-50" width="85" height="45" fill="#e05b43"/><path d="M20-35h85M20-20h85" stroke="#ffb18b" stroke-width="3"/>
+</g>
+<!-- seafood on ice foreground -->
+<g transform="translate(440 535)">
+ <path d="M60 125q240-130 570-50l-40 105q-250 70-520 15z" fill="#d8f7ff" fill-opacity=".18" stroke="#8be7ff" stroke-width="3"/>
+ <path d="M130 110q160-100 360-45q100 28 170 80q-140 88-350 52q-130-22-180-87z" fill="url(#salmon)" stroke="#ffd0a8" stroke-width="5"/>
+ <path d="M180 105q180-70 390-8M195 130q170-58 370-5M230 154q140-42 300-5" stroke="#ffe3c5" stroke-width="7" opacity=".8"/>
+ <path d="M500 65q70-45 145-18l-35 40q-70 22-110-22z" fill="#f6a16f"/>
+ <g fill="#ffb58a" stroke="#ffe0c2" stroke-width="4"><path d="M65 130q-45-40-12-72q50-20 80 20q30 40-20 70z"/><path d="M95 175q-45-40-12-72q50-20 80 20q30 40-20 70z"/></g>
+ <g stroke="#fff0d9" stroke-width="5" fill="none"><path d="M60 90q50 10 48 58M88 120q45 4 45 44M90 160q30-20 58-3"/></g>
+ <g fill="#f3fbff" opacity=".85"><circle cx="30" cy="80" r="10"/><circle cx="155" cy="195" r="8"/><circle cx="420" cy="195" r="10"/><circle cx="680" cy="165" r="8"/><circle cx="760" cy="130" r="11"/></g>
+</g>
+<!-- seabirds -->
+<g stroke="#d5f4ff" stroke-width="5" stroke-linecap="round" opacity=".85"><path d="M420 180q20-22 42 0q22-22 43 0"/><path d="M520 220q15-17 30 0q15-17 30 0"/></g>
+</svg>
