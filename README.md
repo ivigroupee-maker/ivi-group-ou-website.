@@ -3,18 +3,20 @@
 A responsive, static multilingual company website for IVI GROUP OU.
 
 ## Current scope
-- Fishing and fish harvesting
+- Fish harvesting
 - Fish and seafood processing
-- Wholesale fish and seafood trade
+- Wholesale trade in fish and seafood
 - Export of fish and seafood
 
 ## Languages
-English (default), Polish and Russian.
+- English (default)
+- Simplified Chinese (中文)
+- Russian (Русский)
 
 ## Deploy
-This is a static website. Import the repository into Vercel; no build command or framework is required. The entry page is `index.html`.
+This is a static website. The entry page is `index.html`; no framework or build command is required. The GitHub repository is connected to Vercel for deployments.
 
-## Before public launch
-Confirm and add the company's official contact details, product range, factual company profile, operating geography, and any certifications or quality statements that the company is entitled to publish.
+## Before the public company launch
+Confirm and add the company's official contact details, legal company profile, product range, operating geography, and any certifications or quality statements that the company is entitled to publish.
 
 The existing Google Sites website is not modified by this repository.
